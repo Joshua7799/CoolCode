@@ -8,16 +8,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 main{
 
     background-color: var(--clr-light-gray);
+    color: white;
     text-align: center;
     line-height: 1.5;
+    background-image: url("../images/yeah.png");
+    background-size: cover;
+    background-repeat: repeat-x;
 
 }
+
+#hero{
+
+
+
+
+}
+
 nav{
 
     text-align: center;
