@@ -14,26 +14,32 @@
 main{
 
     background-color: var(--clr-light-gray);
-    
-
-}
-
-#hero{
-    height: 60vh;
-    min-height: 360px;
     color: white;
     text-align: center;
     line-height: 1.5;
     background-image: url("../images/yeah.png");
     background-size: cover;
     background-repeat: repeat-x;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
+    
 }
+
+
 
 nav{
 
     text-align: center;
+
+}
+
+footer{
+
+display: flex;
+flex-direction: column;
+
+margin-left: 100;
+margin-right: 100;
+
+line-height: 1.5;
+
 
 }
