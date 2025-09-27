@@ -19,8 +19,10 @@ main{
     line-height: 1.5;
     background-image: url("../images/yeah.png");
     background-size: cover;
-    background-repeat: repeat-x;
-    
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 1;
+
 }
 
 
@@ -31,15 +33,83 @@ nav{
 
 }
 
+nav ul{
+
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+}
+
+nav a{
+
+    text-decoration: none;
+    padding: 1rem;
+
+}
+
+nav a{
+
+    text-decoration: none;
+    padding: 1rem;
+
+}
+
+nav a{
+
+    text-decoration: none;
+    padding: 1rem;
+
+}
+
+html, body{
+
+    height: 100%;
+
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+header{
+
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background: transparent;
+}
+
 footer{
 
-display: flex;
-flex-direction: column;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: aquamarine;
 
-margin-left: 100;
-margin-right: 100;
+}
 
-line-height: 1.5;
+.project{
 
+    width: auto;
+    margin: 1rem auto;
+    border-radius: 25px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 1rem;
+    background-color: green;
+    color: black;
+
+}
+.project img {
+
+    height: auto;
+    width: 100%;
+    display: block;
 
 }

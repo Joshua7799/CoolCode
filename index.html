@@ -5,12 +5,11 @@
 
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <branding>
-    </branding>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <logo></logo>
+    <title>Introduction</title>
 
 </head>
 
@@ -24,9 +23,9 @@
 
         <ul>
 
-            <li><a href="./index.html">Introduction!</a></li>
+            <li><a href="./index.html">Introduction</a></li>
 
-            <li><a href="./projects.html">Highlighted Projects!</a></li>
+            <li><a href="./projects.html">Highlighted Projects</a></li>
 
         </ul>
 
@@ -35,13 +34,13 @@
     </header>
     <main>
         <section id="hero">
-            <div>
-                <h1>Hello! Welcome to my portfolio!</h1>
-                <h1>This page includes information about me</h1>
-                <h1>and projects that I have done or want to work on!</h1>
-            </div>
+
+            <h1>Hello! Welcome to my portfolio!</h1>
+            <h2>This page includes information about me</h2>
+            <h2>and projects that I have done or want to work on!</h2>
 
             <a href="#contact"><div>Contact Me!</div></a>
+
         </section>
         <section id="about">
             <h2>About Me</h2>
@@ -49,38 +48,49 @@
             <p>I have worked on many projects throughout my time at UNCC and this is where you can see them!</p>
             <p>My career goals are to work in some big tech firm and be able to gain experience and move up through my hard work.</p>
         </section>
-        
-    </main>
-<footer>
-    <section>
-        <h6><i></i> Contact</h6>
+
         <section id="contact">
+
+            <h2>Here's where you can contact me at!</h2>
+            <p>Email: <a href="mailto:jt7152004@gmail.com">jt7152004@gmail.com</a> </p>
+            <p>Phone: <a href="tel:+1980318706">(980)-318-7061</a> </p>
+
             <form>
-                <h1>Here's where you can contact me!</h1>
-                <p>Email: <a href="mailto: "></a> </p>
-                <p>Phone: <a href="tel: "></a> </p>
+        
                 <div>
                     <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" required>
+                    <input type="text" pattern="[A-Za-z]*" name="first_name" id="first-name" required>
                 </div>
+
                 <div>
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" required>
+                    <input type="text" pattern="[A-Za-z]*" name="last_name" id="last-name" required>
                 </div>
+
                 <div>
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" required>
                 </div>
+
                 <div>
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" required>
+                    <input type="tel" pattern="[0-9]*" name="phone" id="phone" required>
                 </div>
+
+                <button type="submit">Submit Form</button>
+
             </form>
         </section>
+        
+    </main>
+<footer>
+    <section>
+
+        <p>&copy; 2025 Joshua Torres</p>
         <ul>
-            <li><a href="https://www.instagram.com/josht_812/"></a>Instagram</li>
-            <li><a href=""></a>LinkedIn</li>
-            <li><a href=""></a></li>
+            <li><a href="https://www.instagram.com/josht_812/">Instagram</a></li>
+            <li><a href="">LinkedIn</a></li>
+            <li><a href="tel:980-318-7061">980-318-7061</a></li>
         </ul>
     </section>
 </footer>
