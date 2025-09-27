@@ -1,27 +1,40 @@
 :root{
 
-    --clr-light-gray: hsl(0, 0%, 81%);
+    --clr-primary: #06402B;
+    --clr-accent: #CFAE40;
+    --clr-text: #111111;
+    --clr-bg: #F0E6D8;
+    --clr-white: #ffffff;
 }
 
 *{
 
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
+}
+
+html, body{
+
+    height: 100%;
+
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.5;
+    color: var(--clr-text);
+    background-color: var(--clr-bg);
 
 }
 
 main{
 
-    background-color: var(--clr-light-gray);
-    color: white;
-    text-align: center;
-    line-height: 1.5;
-    background-image: url("../images/yeah.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    flex-grow: 1;
+    flex: 1;
 
 }
 
@@ -48,40 +61,14 @@ nav a{
 
 }
 
-nav a{
-
-    text-decoration: none;
-    padding: 1rem;
-
-}
-
-nav a{
-
-    text-decoration: none;
-    padding: 1rem;
-
-}
-
-html, body{
-
-    height: 100%;
-
-}
-
-body{
-
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
-}
-
 header{
 
     width: 100%;
     padding: 1rem;
     text-align: center;
-    background: transparent;
+    background: var(--clr-primary);
+    color: var(--clr-white);
+    
 }
 
 footer{
@@ -90,7 +77,8 @@ footer{
     width: 100%;
     padding: 1rem;
     text-align: center;
-    background-color: aquamarine;
+    background: var(--clr-primary);
+    color: var(--clr-white);
 
 }
 
@@ -102,8 +90,10 @@ footer{
     overflow: hidden;
     text-align: center;
     padding-bottom: 1rem;
-    background-color: green;
-    color: black;
+    background-color: var(--clr-accent);
+    color: var(--clr-text);
+    display: grid;
+    gap: 1rem;
 
 }
 .project img {
@@ -111,5 +101,33 @@ footer{
     height: auto;
     width: 100%;
     display: block;
+
+}
+
+.projects{
+
+    display: grid;
+
+}
+
+
+@media (min-width: 800px){
+
+    .projects{
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (min-width: 1200px){
+
+    .projects{
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
 
 }
